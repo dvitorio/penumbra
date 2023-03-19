@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Quicksand', sans-serif;
+}
+
+.generalContainer{
+     width: 100vw;
+     min-height: 100vh;
+}
+
+body{
+     background-color: rgb(216, 208, 208);
+}
+
+.navbar{
+     min-height: 5rem;
+     width: 100vw;
+}
+
+.brand{
+     width: 5rem;
+}
+
+.brand img{
+     width: 100%;
+}
+
+.coverSite{
+     width: 100vw !important;
+     height: 100vh !important;
+     background-image: url('/img/backgroundPenumbra.jpg');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover !important;
+}
+
+.coverSite h1{
+     font-size: 3rem;
+     width: 50vw;
+}
+
+.coverSite img{
+     width: 100%;
+}
+
+.nossaHistoria{
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     background-color: rgb(216, 208, 208);
+     width: 100vw;
+     height: 100vh;
+}
+
+.historia{
+     background-color: whitesmoke;
+     min-height: 95vh;
+     min-width: 45vw;
+     max-width: 99vw;
+     border-radius: 10px;
+     padding: 5px;
+}
+
