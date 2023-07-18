@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.centerRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.geral{
+    min-height: 100vh !important;
+    width: 100vw !important;
+}
+
+.navbar{
+    background-color: #000000;
+    min-height: 12vh;
+    min-width: 100vw !important;
+    z-index: 1;
+}
+
+.navbar a:hover{
+    color: rgb(198, 83, 21) !important;
+    cursor: pointer;
+}
+
+.midias i{
+    font-size: 1.2rem;
+}
+
+.paginaInicial{
+    background: linear-gradient(to bottom, black, rgb(128, 121, 121), rgb(150, 143, 143));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw !important;
+    min-height: 85vh;
+}
+
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    margin-top: -15px;
+}
+
+.carousel-caption h1{
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+.quemSomos{
+    width: 100vw;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quemSomosBox{
+    height: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.quemSomosBox p{
+    line-height: 35px;
+}
+
+.quemSomosBox img{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
+/*Responsividade até 640px*/
+@media screen and (max-width: 40rem) {
+    .navbar-nav a, .navbar-nav button{
+        margin-left: 0 !important;
+    }
+    .paginaInicial{
+        flex-direction: column;
+    }
+    .quemSomos{
+        flex-direction: column;
+    }
+    .quemSomosBox{
+        min-width: 100vw !important;
+    }
+}
+
+/*Responsividade de 640px até 960*/
+@media screen and (min-width: 41rem) and (max-width: 60rem) {
+    .navbar-nav a, .navbar-nav button{
+        margin-left: 0 !important;
+    }
+    .paginaInicial{
+        flex-direction: column;
+    }
+    .quemSomos{
+        flex-direction: column;
+    }
+    .quemSomosBox{
+        min-width: 45vw !important;
+    }
+}
+
+/*Responsividade de 640px até 960*/
+@media screen and (min-width: 61rem) {
+    .navbar-nav a, .navbar-nav button{
+        margin-left: 0 !important;
+    }
+    .paginaInicial{
+        flex-direction: column;
+    }
+    .quemSomosBox{
+        min-width: 20vw !important;
+    }
+}
+
