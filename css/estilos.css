@@ -40,7 +40,8 @@ html{
 }
 
 .paginaInicial{
-    background: linear-gradient(to bottom, black, rgb(128, 121, 121), rgb(150, 143, 143));
+    background-image: url('/img/fundo.jpg');
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,12 +49,15 @@ html{
     min-height: 85vh;
 }
 
+.paginaInicial img{
+    max-width: 100%;
+}
+
 .carousel{
     display: flex;
     align-items: center;
     justify-content: center;
     min-width: 100vw;
-    margin-top: -15px;
 }
 
 .carousel-caption h1{
