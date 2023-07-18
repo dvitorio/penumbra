@@ -58,6 +58,7 @@ html{
     align-items: center;
     justify-content: center;
     min-width: 100vw;
+    background-color: rgb(2, 2, 2);
 }
 
 .carousel-caption h1{
