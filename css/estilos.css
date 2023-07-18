@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -59,28 +63,23 @@
 
 .quemSomos{
     width: 100vw;
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.quemSomosBox{
-    height: auto !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .quemSomosBox p{
     line-height: 35px;
+    text-align: center;
 }
 
 .quemSomosBox img{
     max-width: 100%;
     overflow-x: hidden;
+    border-radius: 6px;
 }
+
 
 
 
