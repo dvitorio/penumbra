@@ -45,12 +45,16 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw !important;
+    max-width: 100vw !important;
     min-height: 85vh;
 }
 
 .paginaInicial img{
     max-width: 100%;
+}
+
+.paginaInicial h1{
+    font-size: 4rem !important;
 }
 
 .carousel{
