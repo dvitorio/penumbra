@@ -61,8 +61,14 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 100vw;
+    width: 100vw !important;
     background-color: rgb(2, 2, 2);
+}
+
+.carousel-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .carousel-caption h1{
@@ -79,6 +85,7 @@ html{
 }
 
 .quemSomosBox p{
+    font-size: .9rem;
     line-height: 35px;
     text-align: center;
 }
@@ -101,6 +108,10 @@ html{
     .paginaInicial{
         flex-direction: column;
     }
+    .carousel,
+    .carousel-inner{
+        width: 100vw !important;
+    }
     .quemSomos{
         flex-direction: column;
     }
@@ -116,6 +127,13 @@ html{
     }
     .paginaInicial{
         flex-direction: column;
+    }
+    .carousel{
+        width: 100vw !important;
+    }
+    .carousel,
+    .carousel-inner{
+        width: 100vw !important;
     }
     .quemSomos{
         flex-direction: column;
@@ -135,6 +153,10 @@ html{
     }
     .quemSomosBox{
         min-width: 20vw !important;
+    }
+    .carousel,
+    .carousel-inner{
+        width: 100vw !important;
     }
 }
 
