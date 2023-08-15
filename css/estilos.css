@@ -82,6 +82,7 @@ html{scroll-behavior: smooth}
 }
 
 .secaoMultimidia{
+    scroll-margin-top: 6rem;
     display: grid;
     grid-template-columns: "50vw 50vw";
     grid-template-rows: auto;
@@ -112,25 +113,39 @@ html{scroll-behavior: smooth}
 .multimidiaVideo1{
     grid-area: multimidiaVideo1;
     width: 45vw;
-    min-height: 50vh;
+    min-height: 45vh;
 }
 
 .multimidiaVideo2{
     grid-area: multimidiaVideo2;
     width: 45vw;
-    min-height: 50vh;
+    min-height: 45vh;
 }
 
-.multmidiaVideo3{
+.multimidiaVideo3{
     grid-area: multimidiaVideo3;
     width: 45vw;
-    min-height: 50vh;
+    min-height: 45vh;
 }
 
 .multimidiaVideo4{
     grid-area: multimidiaVideo4;
     width: 45vw;
-    min-height: 50vh;
+    min-height: 45vh;
+}
+
+.secaoProgramacao{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.programacao{
+    width: 100vw;
+    min-height: 85vh !important;
+}
+
+.programacao p{
+    font-size: .9rem;
 }
 
 .quemSomos{
@@ -312,9 +327,23 @@ html{scroll-behavior: smooth}
     .multimidiaVideo1,
     .multimidiaVideo2,
     .multimidiaVideo3,
-    .multimidiaVideo4{
-        width: 100vw;
-        height: auto !important;
+    .multimidiaVideo4,
+    .multimidiaVideo1 img,
+    .multimidiaVideo2 img,
+    .multimidiaVideo3 img,
+    .multimidiaVideo4 img{
+        width: auto;
+        min-height: 50vh !important;
+    }
+    .secaoProgramacao{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .programacao{
+        margin: 0 5px !important;
+        padding: 0 5px !important;
     }
 
 }
