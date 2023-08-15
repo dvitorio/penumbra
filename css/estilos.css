@@ -267,23 +267,28 @@ html{scroll-behavior: smooth}
 
 /*Resolução até 640px*/
 @media screen and (max-width: 40rem) {
-    .navbar-nav a, .navbar-nav button{
-        margin-left: 0 !important;
+    .navbar-nav{
+        display: block;
+    }
+    .navbar-nav button{
+        width: 75vw;
     }
     .paginaInicial{
         max-width: 100% !important;
-        height: auto;
+        height: auto !important;
         background-repeat: no-repeat;
     }
     .paginaInicial img{
-        height: 85%;
+        height: 85% !important;
         background-repeat: no-repeat;
     }
     .depoimentos, 
     .quemSomos,
     .quemSomosImagem,
+    .quemSomosImagemGuga,
     .quemSomosTitulo,
-    .quemSomosTextos{
+    .quemSomosTextos,
+    .quemSomosTextosGuga{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -291,13 +296,36 @@ html{scroll-behavior: smooth}
         width: 100vw !important;
         margin: 5px auto !important;
     }
+    h2{
+        font-size: 1.3rem !important;
+        text-align: center;
+        padding: 0 5px !important;
+    }
+    .secaoMultimidia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        height: auto !important;
+    }
+    .multimidiaVideo1,
+    .multimidiaVideo2,
+    .multimidiaVideo3,
+    .multimidiaVideo4{
+        width: 100vw;
+        height: auto !important;
+    }
 
 }
 
 /*Resolução de 640px até 960px*/
 @media screen and (min-width: 41rem) and (max-width: 60rem) {
-    .navbar-nav a, .navbar-nav button{
-        margin-left: 0 !important;
+    .navbar-nav{
+        display: block;
+    }
+    .navbar-nav button{
+        width: 75vw;
     }
     .depoimentos, 
     .quemSomos,
