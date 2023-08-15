@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
-html{
-    scroll-behavior: smooth;
-}
+html{scroll-behavior: smooth}
 
 *{
     box-sizing: border-box;
@@ -13,8 +11,16 @@ html{
 }
 
 .centerRow{
-    display: flex;
     align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.centerColumn{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -24,7 +30,6 @@ html{
 }
 
 .navbar{
-    background-color: #000000;
     min-height: 12vh;
     min-width: 100vw !important;
     z-index: 1;
@@ -35,6 +40,26 @@ html{
     cursor: pointer;
 }
 
+.nav-link{
+    font-size: .9em;
+    margin: 0 1rem !important;
+    font-weight: 200;
+}
+
+.tituloNavegacao{
+    display: block;
+}
+
+.tituloNavegacao h5{
+    margin-top: -1.rem !important;
+}
+
+.ancoraNavegacao{
+    position: fixed;
+    top: 90vh;
+    left: 95vw;
+}
+
 .midias i{
     font-size: 1.2rem;
 }
@@ -42,121 +67,255 @@ html{
 .paginaInicial{
     background-image: url('/img/fundo.jpg');
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 100vw !important;
-    min-height: 85vh;
-}
-
-.paginaInicial img{
-    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 80vh;
 }
 
 .paginaInicial h1{
-    font-size: 4rem !important;
+    font-size: 4rem;
 }
 
-.carousel{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.paginaInicialTextos{
+    height: 12rem;
+}
+
+.secaoMultimidia{
+    display: grid;
+    grid-template-columns: "50vw 50vw";
+    grid-template-rows: auto;
+    grid-template-areas: "multimidiaTitulo multimidiaTitulo"
+                         "multimidiaVideo1 multimidiaVideo2"
+                         "multimidiaVideo3 multimidiaVideo4";
     width: 100vw !important;
-    background-color: rgb(2, 2, 2);
+    gap: 5px;
+    min-height: 110vh;
 }
 
-.carousel-inner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.secaoMultimidia a{
+    color: grey;
+    text-decoration: none;
 }
 
-.carousel-caption h1{
-    text-align: center;
-    text-shadow: 1px 1px 1px black;
+.secaoMultimidia a:hover{
+    color: darkred;
+    text-decoration: none;
+}
+
+.multimidiaTitulo{
+    grid-area: multimidiaTitulo;
+    width: 100vw;
+    min-height: 1.5rem;
+}
+
+.multimidiaVideo1{
+    grid-area: multimidiaVideo1;
+    width: 45vw;
+    min-height: 50vh;
+}
+
+.multimidiaVideo2{
+    grid-area: multimidiaVideo2;
+    width: 45vw;
+    min-height: 50vh;
+}
+
+.multmidiaVideo3{
+    grid-area: multimidiaVideo3;
+    width: 45vw;
+    min-height: 50vh;
+}
+
+.multimidiaVideo4{
+    grid-area: multimidiaVideo4;
+    width: 45vw;
+    min-height: 50vh;
 }
 
 .quemSomos{
     width: 100vw;
+    min-height: 85vh;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: "50vw 50vw";
+    grid-template-areas: "quemSomosTitulo quemSomosTitulo"
+                         "quemSomosTextos quemSomosImagem"
+                         "quemSomosTextosGuga quemSomosImagemGuga"
+                         "quemSomosAncora quemSomosAncora";
+    gap: 4px;
+}
+
+.quemSomosTitulo{
+    grid-area: quemSomosTitulo;
+    width: 100vw;
+    min-height: 1.5rem;
+}
+
+.quemSomosTextos{
+    grid-area: quemSomosTextos;
+    width: 40vw;
+    min-height: 75vh;
+}
+
+.quemSomosTextos p,
+.quemSomosTextosGuga p{
+    font-size: .95rem;
+    line-height: 1.75rem;
+}
+
+.quemSomosImagem{
+    grid-area: quemSomosImagem;
+    width: 40vw;
+    min-height: 75vh;
+}
+
+.quemSomosImagem img,
+.quemSomosImagemGuga img{
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.quemSomosTextosGuga{
+    grid-area: quemSomosTextosGuga;
+    width: 40vw;
+    min-height: 75vh;
+    margin-top: -2rem !important;
+}
+
+.quemSomosImagemGuga{
+    grid-area: quemSomosImagemGuga;
+    width: 40vw;
+    min-height: 70vh;
+    margin-top: -2rem !important;
+}
+
+.quemSomosAncora{
+    grid-area: quemSomosAncora;
+    max-width: 100vw;
+    min-height: 1.5rem;
+}
+
+.depoimentos{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: "20vw 20w 20vw 20vw";
+    grid-template-areas: "depoimentoTitulo depoimentoTitulo depoimentoTitulo depoimentoTitulo"
+                         "depoimento depoimento depoimento depoimento"
+                         "depoimentoAncora depoimentoAncora depoimentoAncora depoimentoAncora";
+    width: 100vw;
     min-height: 100vh;
+}
+
+.depoimentoTitulo{
+    grid-area: depoimentoTitulo;
+    width: 100vw;
+    min-height: 1.5rem;
+}
+
+.depoimento{
+    background-color: #efebeb;
+    width: 20rem;
+    height: 25rem;
+}
+
+.depoimentoPhoto{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.depoimentoPhoto img{
+    width: 100%;
+    height: 100%;
+}
+
+.depoimento h5{
+    font-size: 1rem;
+}
+
+.depoimento p{
+    font-size: 0.9rem;
+}
+
+.depoimentoEstrelas{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.quemSomosBox p{
-    font-size: .9rem;
-    line-height: 35px;
-    text-align: center;
+.depoimentoAncora{
+    grid-area: depoimentoAncora;
+    width: 100vw;
+    height: 1.5rem;
 }
 
-.quemSomosBox img{
-    max-width: 100%;
-    overflow-x: hidden;
-    border-radius: 6px;
+.rodape{
+    background-color: #000000;
+    min-height: 6rem;
+}
+
+.rodape h6{
+    font-size: .75rem;
 }
 
 
 
 
 
-/*Responsividade até 640px*/
+/*Resolução até 640px*/
 @media screen and (max-width: 40rem) {
     .navbar-nav a, .navbar-nav button{
         margin-left: 0 !important;
     }
     .paginaInicial{
-        flex-direction: column;
+        max-width: 100% !important;
+        height: auto;
+        background-repeat: no-repeat;
     }
-    .carousel,
-    .carousel-inner{
+    .paginaInicial img{
+        height: 85%;
+        background-repeat: no-repeat;
+    }
+    .depoimentos, 
+    .quemSomos,
+    .quemSomosImagem,
+    .quemSomosTitulo,
+    .quemSomosTextos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         width: 100vw !important;
+        margin: 5px auto !important;
     }
-    .quemSomos{
-        flex-direction: column;
-    }
-    .quemSomosBox{
-        min-width: 100vw !important;
-    }
+
 }
 
-/*Responsividade de 640px até 960*/
+/*Resolução de 640px até 960px*/
 @media screen and (min-width: 41rem) and (max-width: 60rem) {
     .navbar-nav a, .navbar-nav button{
         margin-left: 0 !important;
     }
-    .paginaInicial{
+    .depoimentos, 
+    .quemSomos,
+    .quemSomosImagem,
+    .quemSomosTextos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
-    }
-    .carousel{
+        margin: 5px auto !important;
         width: 100vw !important;
-    }
-    .carousel,
-    .carousel-inner{
-        width: 100vw !important;
-    }
-    .quemSomos{
-        flex-direction: column;
-    }
-    .quemSomosBox{
-        min-width: 45vw !important;
     }
 }
 
-/*Responsividade de 640px até 960*/
+/*Resolução maior que 960px*/
 @media screen and (min-width: 61rem) {
     .navbar-nav a, .navbar-nav button{
         margin-left: 0 !important;
-    }
-    .paginaInicial{
-        flex-direction: column;
-    }
-    .quemSomosBox{
-        min-width: 20vw !important;
-    }
-    .carousel,
-    .carousel-inner{
-        width: 100vw !important;
     }
 }
 

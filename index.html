@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="/css/estilos.css" defer>
   <!--AOS ANIMATIONS CSS-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--ANIMATE CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
@@ -23,10 +26,13 @@
   <!--Container geral do site-->
   <section class="geral">
     <!--Barra de navegação e menu-->
-    <nav class="centerRow navbar navbar-expand-lg row">
+    <header class="centerRow navbar navbar-expand-lg navbar-dark row" id="navegacao">
       <article class="centerRow col-xl-2 logo mx-2 p-2">
         <img class="img d-block pr-2" src="/img/logo.png" height="60">
-        <h2 class="h2 text-white">Penumbra</h2>
+        <div class="tituloNavegacao">
+          <h2 class="h2 text-dark">Penumbra</h2>
+          <h5 class="h5 text-dark">Baiano</h5>
+        </div>
         <button class="bg-dark navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -35,128 +41,200 @@
       <article class="col-xl-7 menu mx-2 p-2">
         <article class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="centerRow navbar-nav">
-            <a class="mx-1 nav-link text-white" href="#" id="begin">Início</a>
-            <a class="mx-1 nav-link text-white" href="#quemSomos">Quem somos</a>
-            <a class="mx-1 nav-link text-white" href="#">Multimidia</a>
-            <a class="mx-1 nav-link text-white">Depoimentos</a>
-            <a class="mx-1 nav-link text-white">Contato</a>
-            <a class="mx-1 nav-link text-white">Parceiros</a>
-            <a class="mx-1 nav-link rounded text-warning" id="btnMenuDonate"><i
-                class="fa-solid fa-hand-holding-dollar"></i> Seja um apoiador</a>
-            <button class="mx-1 btn btn-primary">Contato</button>
+            <a class="mx-1 nav-link text-dark" href="#" id="begin">Início</a>
+            <a class="mx-1 nav-link text-dark" href="#quemSomos">Quem somos</a>
+            <a class="mx-1 nav-link text-dark" href="#secaoMultimidia">Multimidia</a>
+            <a class="mx-1 nav-link text-dark" href="#depoimentos">Depoimentos</a>
+            <a class="mx-1 nav-link text-dark">Contato</a>
+            <a class="mx-1 nav-link text-dark">Parceiros</a>
+            <a class="mx-1 nav-link rounded text-danger" id="btnMenuDonate"><b><i
+                  class="fa-solid fa-hand-holding-dollar"></i></b> Seja um apoiador</a>
+            <button class="mx-1 btn btn-danger">Contato</button>
         </article>
       </article>
       <article class="centerRow col-xl-2 mx-2 midias p-2">
-        <i class="fa-brands fa-instagram mx-3 text-white"></i>
-        <i class="fa-brands fa-facebook-f mx-3 text-white"></i>
-        <i class="fa-brands fa-whatsapp mx-3 text-white"></i>
-        <i class="fa-regular fa-envelope mx-3 text-white"></i>
+        <i class="fa-brands fa-instagram mx-3 text-dark"></i>
+        <i class="fa-brands fa-facebook-f mx-3 text-dark"></i>
+        <i class="fa-brands fa-whatsapp mx-3 text-dark"></i>
+        <i class="fa-regular fa-envelope mx-3 text-dark"></i>
       </article>
-    </nav>
+    </header>
 
     <!--Página inicial-->
-    <main class="paginaInicial row">
-      <article class="col-xl-6 paginaInicialTitle">
-        <h1 class="text-center text-white mx-auto"><b>Penumbra baiano</b></h1>
-      </article>
-      <article class="col-xl-6">
-        <h3 class="text-center text-white mx-auto">Poesia, literatura, utilidade pública, e muito mais...</h1>
-      </article>
-    </main>
-
-    <!--Carrossel-->
-    <section id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-aos="fade-up">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-      </ol>
-      <section class="carousel-inner">
-        <article class="carousel-item active">
-          <img src="/img/img4.jpeg" class="img d-flex mx-auto" alt="..." style="max-height: 600px;">
-          <div class="carousel-caption d-md-block">
-            <h1 class="text-warning">Venha conhecer o Projeto Penumbra</h1>
-          </div>
-        </article>
-        <article class="carousel-item">
-          <img src="/img/img3.jpeg" class="img d-flex mx-auto" alt="..." style="max-height: 600px;">
-          <div class="carousel-caption d-md-block">
-            <h1 class="text-white">Um espaço livre para poesia...</h1>
-          </div>
-        </article>
-        <article class="carousel-item">
-          <img src="/img/img1.jpeg" class="img d-flex mx-auto" alt="..." style="max-height: 600px;">
-          <div class="carousel-caption d-md-block">
-            <h1 class="text-white">...manifestações artísticas diversificadas...</h1>
-          </div>
-        </article>
-        <article class="carousel-item">
-          <img src="/img/img2.jpeg" class="img d-flex mx-auto" alt="..." style="max-height: 600px;">
-          <div class="carousel-caption d-md-block">
-            <h1 class="text-white">...teatro e muito mais!</h1>
-          </div>
-        </article>
-      </section>
-      <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </button>
-    </section>
-
+    <div class="centerColumn paginaInicial" id="paginaInicial">
+      <h1 class="text-center text-white" data-aos="zoom-in" data-aos-duration="2000">Cultura, arte e educação</h1>
+    </div>
 
     <!--Quem somos-->
-    <section class="quemSomos row" id="quemSomos">
-      <article class="col-xl-5 quemSomosBox mx-auto" data-aos="fade-up" data-aos-duration="2500">
-        <img class="img my-2 mx-auto" src="/img/penumbra.jpg" alt="">
-        <h4 class="text-center text-danger"><b>Quem somos</b></h4>
-        <p class="text-center text-secondary" data-aos="fade-up" data-aos-duration="2500">
-          O Penumbra Baiano é um projeto idealizado por Gustavo Duarte, um arte-educador que ama a arte em geral.
-          O objetivo do Penumbra Baiano é fortalecer os trabalhos arte-Educacionais de pessoas das comunidades de
-          Salvador, incentivando a leitura e a promoção do conhecimento mutuo. É também, levar informações relevantes
-          através da comunicação verbal e não verbal e a escrita criativa é um dos maiores focos da rede social do
-          Penumbra.
-          Iniciada em 03 de janeiro de 2020, o Penumbra Baiano conta com mais de 400 produções que vão da poesia, conto,
-          reflexões, frases, poemas e críticas, ao bate-papo com transmissão ao vivo pelo Youtube com convidados de
-          diversas áreas profissionais.
+    <div class="quemSomos" id="quemSomos">
+      <div class="quemSomosTitulo">
+        <h2 class="my-3 text-center text-danger" data-aos="fade-up" data-aos-duration="2000"><b>Quem somos</b></h2>
+      </div>
+      <div class="container quemSomosTextos">
+        <h4 class="pl-5 mt-5 text-danger" data-aos="fade-up" data-aos-duration="2000"><b>Assim nascia o Penumbra...</b>
+        </h4>
+        <p class="pl-5 my-3 text-justify text-secondary" data-aos="fade-up" data-aos-duration="2000">
+          O Penumbra é um projeto que se dedica à arte em geral, porém é mais focado no teatro e na poesia. O objetivo
+          do Penumbra é fortalecer os trabalhos arte-educacionais de pessoas das comunidades de Salvador, incentivando
+          a leitura e a promoção do conhecimento mútuo. <br /><br /> Além disso, pretendemos também levar informações
+          relevantes através da comunicação verbal e não verbal e a escrita criativa é um dos maiores focos da rede
+          social.
         </p>
-      </article>
-      <article class="col-xl-6 quemSomosBox mx-auto" data-aos="fade-up" data-aos-duration="2500">
-        <h4 class="my-3 text-center text-danger"><b>O idealizador</b></h4>
-        <p class="text-center text-secondary" data-aos="fade-up" data-aos-duration="3000">
-          <span class="text-danger"><b>Gustavo Duarte da Silva</b></span>, arteterapeuta e pedagogo, atua desde 2005
-          como Arte-educador nas comunidades de
-          Salvador-BA e atualmente atua como instrutor de Identidade Artística, desenvolvendo talentos nas áreas de
+        <button class="ml-5 my-3 btn btn-danger">Saiba mais sobre nós</button>
+      </div>
+      <div class="my-3 quemSomosImagem">
+        <img class="d-block mt-5 img mx-auto" src="/img/fundo.jpg" alt="" data-aos="fade-up" data-aos-duration="2000">
+      </div>
+      <div class="container quemSomosTextosGuga">
+        <h4 class="pl-5 mt-4 text-danger" data-aos="fade-up" data-aos-duration="2000"><b>Gustavo Duarte</b></h4>
+        <p class="pl-5 mt-3 text-justify text-secondary" data-aos="fade-up" data-aos-duration="2000">
+          Gustavo Duarte da Silva – Arteterapeuta e Pedagogo - Atua desde 2005 como Arte-educador nas comunidades de
+          Salvador-Bahia e atualmente está como instrutor de identidade artística, desenvolvendo talentos nas áreas de
           teatro, dança, canto, desenho físico e digital dos jovens das comunidades de Pernambués, Cabula, Saboeiro,
-          Boca do Rio, Imbuí, São Cristóvão, Cassange e Jardim das Margaridas.
-          Com sua experiência em escrita criativa, atuou como educador de um projeto social para crianças da comunidade
-          do Calabar, também em Salvador-Bahia. Essa experiência é representada virtualmente através de contos, poesias,
+          Boca do Rio, Imbuí, São Cristóvão, Cassange e Jardim das Margaridas.<br><br>
+          Com sua ampla experiência em escrita criativa, atuou como educador de um projeto social para crianças da
+          comunidade
+          do Calabar, na capital baiana. Essa vivência é representada virtualmente através de contos, poesias,
           poemas, reflexões e lives que abordam temas relevantes para a sociedade no Instagram Penumbra Baiano.
+
         </p>
-        <img class="centerRow img mx-auto" src="/img/img2 - Copia.jpeg" alt="" data-aos="fade-up" data-aos-duration="2500">
+        <button class="ml-5 mt-3 btn btn-danger">Conheça melhor o autor</button>
+      </div>
+      <div class="my-3 quemSomosImagemGuga">
+        <img class="d-block mt-5 img mx-auto" src="/img/img2 - Copia.jpeg" alt="" data-aos="fade-up"
+          data-aos-duration="2000">
+      </div>
+    </div>
+
+    <a href="#navegacao"><i class="ancoraNavegacao fa-solid fa-house text-danger"></i></a>
+
+    <!--Seção Multimidias-->
+    <section class="border secaoMultimidia" id="secaoMultimidia">
+      <article class="multimidiaTitulo">
+        <h2 class="text-center text-danger">Nossas principais produções multimidia</h2>
       </article>
+      <article class="centerColumn multimidiaVideo1">
+        <img class="d-block img mx-auto w-100" src="/img/boneco.png" alt="">
+        <a href="https://drive.google.com/file/d/18tUlv_bxM105TlHKBtgfgrk4ywd8B2vv/view?usp=drive_link" target="_blank">Assista o vídeo completo</a>
+      </article>
+      <article class="centerColumn multimidiaVideo2">
+        <img class="d-block img mx-auto w-100" src="/img/intoleranciaReligiosa.png" alt="">
+        <a href="https://youtu.be/rvtuxOQFvOQ" target="_blank">Assista o vídeo completo</a>
+      </article>
+      <article class="multimidiaVideo3"></article>
+      <article class="border multimidiaVideo4"></article>
     </section>
 
+    <!--Seção de Depoimentos-->
+    <div class="depoimentos" id="depoimentos">
+      <div class="depoimentoTitulo py-3 mb-2">
+        <h2 class="text-center text-danger" data-aos="fade-up" data-aos-duration="2000">Depoimentos</h2>
+      </div>
+      <div class="depoimento mx-auto mb-2" data-aos="fade-up" data-aos-duration="2000">
+        <div class="border depoimentoPhoto mt-3 mx-auto">
+          <img class="d-block img mx-auto h-100" src="/img/img2 - Copia.jpeg" alt="">
+        </div>
+        <h5 class="my-2 text-center text-secondary" data-aos="fade-up" data-aos-duration="2000"><b>Fulano de Tal</b>
+        </h5>
+        <div class="depoimentoEstrelas">
+          <img class="centerRow img mx-2" src="/img/star.png" alt="">
+          <img class="centerRow img mx-2" src="/img/star.png" alt="">
+          <img class="centerRow img mx-2" src="/img/star.png" alt="">
+          <img class="centerRow img mx-2" src="/img/star.png" alt="">
+        </div>
+        <h5 class="my-3 text-center text-secondary" data-aos="fade-up" data-aos-duration="2000"><em>"Melhor profissional
+            que conheci"</em></h5>
+        <p class="text-justify text-secondary px-4" data-aos="fade-up" data-aos-duration="2000">Desde o momento em que
+          meus caminhos se cruzaram com os ensinamentos
+          desse educador apaixonado, minha jornada no mundo digital nunca mais foi a mesma.
+        </p>
+      </div>
+      <div class="depoimento mx-auto mb-2" data-aos="fade-up" data-aos-duration="2000">
+        <div class="border depoimentoPhoto mt-3 mx-auto">
+          <img class="d-block img mx-auto h-100" src="/img/img2 - Copia.jpeg" alt="">
+        </div>
+        <h5 class="my-2 text-center text-secondary" data-aos="fade-up" data-aos-duration="2000"><b>Ciclano da Silva</b>
+        </h5>
+        <div class="depoimentoEstrelas">
+          <img class="centerRow img mx-2" src="/img/star.png" alt="">
+          <img class="centerRow img mx-2" src="/img/star.png" alt="">
+          <img class="centerRow img mx-2" src="/img/star.png" alt="">
+          <img class="centerRow img mx-2" src="/img/star.png" alt="">
+        </div>
+        <h5 class="my-3 text-center text-secondary" data-aos="fade-up" data-aos-duration="2000"><em>"Paixão em tudo que
+            faz"</em></h5>
+        <p class="text-justify text-secondary px-4" data-aos="fade-up" data-aos-duration="2000">Cada aula é uma jornada
+          empolgante repleta de informações valiosas,
+          apresentadas de forma clara e envolvente. Sua paixão é contagiosa, tornando até os temas mais desafiadores
+          envolventes e emocionantes.
+        </p>
+      </div>
+      <div class="depoimento mx-auto mb-2" data-aos="fade-up" data-aos-duration="2000">
+        <div class="border depoimentoPhoto mt-3 mx-auto">
+          <img class="d-block img mx-auto h-100" src="/img/img4.jpeg" alt="">
+        </div>
+        <h5 class="my-2 text-center text-secondary" data-aos="fade-up" data-aos-duration="2000"><b>Beltrano de Jesus</b>
+        </h5>
+        <div class="depoimentoEstrelas">
+          <img class="centerRow img mx-2" src="/img/star.png" alt="">
+          <img class="centerRow img mx-2" src="/img/star.png" alt="">
+          <img class="centerRow img mx-2" src="/img/star.png" alt="">
+          <img class="centerRow img mx-2" src="/img/star.png" alt="">
+        </div>
+        <h5 class="my-3 text-center text-secondary" data-aos="fade-up" data-aos-duration="2000"><em>"Nasceu pra
+            ensinar"</em></h5>
+        <p class="text-justify text-secondary px-4" data-aos="fade-up" data-aos-duration="2000">Além de seu profundo
+          conhecimento técnico, ele
+          incentiva perguntas, debates saudáveis e a exploração criativa, garantindo que todos os alunos se sintam
+          valorizados e encorajados a participar ativamente.
+        </p>
+      </div>
+      <div class="depoimento mx-auto mb-2" data-aos="fade-up" data-aos-duration="2000">
+        <div class="border depoimentoPhoto mt-3 mx-auto">
+          <img class="d-block img mx-auto h-100" src="/img/img2 - Copia.jpeg" alt="">
+        </div>
+        <h5 class="my-2 text-center text-secondary"><b>José da Silva</b></h5>
+        <div class="depoimentoEstrelas">
+          <img class="centerRow img mx-2" src="/img/star.png" alt="">
+          <img class="centerRow img mx-2" src="/img/star.png" alt="">
+          <img class="centerRow img mx-2" src="/img/star.png" alt="">
+          <img class="centerRow img mx-2" src="/img/star.png" alt="">
+        </div>
+        <h5 class="my-3 text-center text-secondary" data-aos="fade-up" data-aos-duration="2000"><em>"Foi com ele que
+            aprendi"</em></h5>
+        <p class="text-justify text-secondary px-4" data-aos="fade-up" data-aos-duration="2000">Não posso deixar de
+          mencionar sua habilidade de se manter atualizado
+          em um mundo digital em constante evolução. Ele não apenas domina as tendências atuais, mas também tem a
+          habilidade rara de prever e se preparar para as futuras mudanças.
+        </p>
+      </div>
+    </div>
+
+    <!--Seção do Rodapé-->
+    <footer class="centerColumn rodape">
+      <h6 class="mx-auto text-center text-white">Penumbra baiano - Todos os direitos reservados. &copy; 2023</h6>
+      <h6 class="mx-auto text-center text-white">Rua Almirante Alves Câmara, Engenho Velho de Brotas</h6>
+    </footer>
+  </section>
 
 
-    <!--JAVASCRIPT BOOTSTRAP v 4.6-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-      crossorigin="anonymous"></script>
-    <!--AOS ANIMATIONS JS-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+
+  <!--JAVASCRIPT BOOTSTRAP v 4.6-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+  <!--AOS ANIMATIONS JS-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>
